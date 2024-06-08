@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Tasks</title>
+    <script>
+        function addNewTask() {
+            const taskList = document.getElementById('task-list-id');
+            const newTask = document.createElement("li");
+            const newTaskLable = document.createTextNode("new task");
+            newTask.appendChild(newTaskLable);
+            taskList.appendChild(newTask);
+        }
+        function deleteTask(taskId) {
+            console.log(`delete ${taskId}`)
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <ul id="task-list-id" class="task-list">
+            <li id="task-1">task 1 <button onclick="deleteTask('task-1')">-</button></li>
+            <li id="task-2">task 2 <button onclick="deleteTask('task-2')">-</button></li>
+        </ul>
+        <div>
+            <button onclick="addNewTask()">New Task</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
