@@ -10,7 +10,7 @@ import jakarta.servlet.http.HttpServletResponse;
 /**
  * The simplest possible servlet.
  *
- * @author James Duncan Davidson
+ * @author Volodymyr Dotsenko
  */
 
 public class Tasks extends HttpServlet {
